@@ -21,8 +21,8 @@ docker run -d \
       -v <install_folder>:/install \
        tibco-amx-bw:6.8.0
 ```
-Then you can commit this container to have installed and configured oracle database:
+Then you can commit this container to have installed and configured product:
 ```sh
-docker commit tibco-bw-6.8 tibco-amx-bw-installed:6.8.0
+docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
 ```
 Software is installed in **/opt/tibco** folder
