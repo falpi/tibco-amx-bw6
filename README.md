@@ -34,7 +34,11 @@ After the setup is complete, you can start or stop the execution of all componen
 systemctl start tibco
 systemctl stop tibco
 ```
-At the end of the installation it is possible to access the TEA console via the url ```http://<host>:8777/tea/```
+At the end of the installation it is possible to access the TEA console with browser a the urls:
+```sh
+http://localhost:8777/tea/
+http://<host_ip>:8777/tea/
+```
 
 # Details
 The setup scripts manage the installation and configuration of the following products <br />
