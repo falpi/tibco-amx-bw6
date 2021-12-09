@@ -20,7 +20,7 @@ docker run -d \
        -p 13306:3306 \
       -v <install_folder>:/install \
        tibco-amx-bw:6.8.0
-
+```
 Software is installed in **/opt/tibco** folder.
 
 The progress and outcome of the installation is tracked in the log file **/home/tibco/tibco-install.log**.
