@@ -25,9 +25,15 @@ Then you can commit this container to have installed and configured product:
 ```sh
 docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
 ```
-Software is installed in **/opt/tibco** folder
+Software is installed in **/opt/tibco** folder.
 
 The progress and outcome of the installation is tracked in the log file **/home/tibco/tibco-install.log**.
+
+After the setup is complete, you can start or stop the execution of all components, in the right order, through a normal system service:
+```sh
+systemctl start tibco
+systemctl stop tibco
+```
 
 # Details
 The setup scripts manage the installation and configuration of the following products <br />
