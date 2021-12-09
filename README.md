@@ -5,7 +5,7 @@ Image for running a complete single-node cluster instance of TIBCO ActiveMatrixâ
 ``This image for development use only``
 
 # Usage
-Download binaries installation files from [TIBCO site](https://edelivery.tibco.com/) and unpack them to **install_folder**.
+Download binaries installation files from [TIBCO site](https://edelivery.tibco.com/) and put them to **install_folder**.
 Run container and it will install oracle and create database:
 
 ```sh
@@ -21,3 +21,8 @@ docker run -d \
       -v <install_folder>:/install \
        tibco-amx-bw:6.8.0
 ```
+Then you can commit this container to have installed and configured oracle database:
+```sh
+docker commit tibco-bw-6.8 tibco-amx-bw-installed:6.8.0
+```
+Software is installed in **/opt/tibco** folder
