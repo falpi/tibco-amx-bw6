@@ -37,6 +37,6 @@ TIBCO Enterprise Message Service 8.6.0 ... : TIB_ems_8.6.0_linux_x86_64.zip
 TIBCO ActiveMatrix BusinessWorks 6.8.0 ... : TIB_bw_6.8.0_linux26gl23_x86_64.zip
 TIBCO Enterprise Administrator 2.4.0 ..... : TIB_tea_2.4.0_linux26gl23_x86_64.zip
 ```
-The configuration chosen for the BWAGENT is the one based on FTL with persistence on MariaDB. The image includes the database server and provides to configure it appropriately during setup.
+The configuration chosen for the **BWAGENT** is the one based on FTL with persistence on MariaDB. The image includes the database server and provides to configure it appropriately during setup.
 
 All the details of the installation procedure can be customized using the various scripts contained in the "**home**" folder which in the image become part of the "**/home/tibco**" path.
