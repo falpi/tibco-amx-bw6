@@ -27,6 +27,8 @@ docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
 ```
 Software is installed in **/opt/tibco** folder
 
+The progress and outcome of the installation is tracked in the log file **/home/tibco/tibco-install.log**.
+
 # Details
 The setup scripts manage the installation and configuration of the following products <br />
 (Next to each product is indicated the exact name of the binary file that must be placed in the **install_folder**) :
@@ -38,5 +40,7 @@ TIBCO ActiveMatrix BusinessWorks 6.8.0 ... : TIB_bw_6.8.0_linux26gl23_x86_64.zip
 TIBCO Enterprise Administrator 2.4.0 ..... : TIB_tea_2.4.0_linux26gl23_x86_64.zip
 ```
 The configuration chosen for the **BWAGENT** is the one based on FTL with persistence on MariaDB. The image includes the database server and provides to configure it appropriately during setup.
+
+
 
 All the details of the installation procedure can be customized using the various scripts contained in the "**home**" folder which in the image become part of the home directory of tibco user (**/home/tibco**).
