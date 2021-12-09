@@ -50,4 +50,4 @@ The configuration chosen for the **BWAGENT** is the one based on FTL with persis
 All the details of the installation procedure can be customized using the various scripts contained in the "**home**" folder which in the image become part of the home directory of tibco user (**/home/tibco**).
 
 # Credits
-Support for the use of SystemD services without the need to run the container in privileged mode is possible thanks to the valuable work of Guido Draheim (https://github.com/gdraheim/docker-systemctl-replacement).
+Support for the use of SystemD services without the need to run the container in privileged mode is possible thanks to the valuable work of **Guido Draheim** (https://github.com/gdraheim/docker-systemctl-replacement).
