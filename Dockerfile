@@ -19,7 +19,7 @@ RUN `#=======================================` && \
     usermod -aG wheel tibco && \
     mv /temp/*.* /home/tibco && \   
     rm -rf /temp  && \ 
-    hmod +x /home/tibco/*.sh && \
+    chmod +x /home/tibco/*.sh && \
     chmod +x /home/tibco/*.py && \    
     chmod +x /home/tibco/tibco.service && \
     ln -s /home/tibco/tibco-profile.sh /etc/profile.d/tibco-profile.sh  && \ 
