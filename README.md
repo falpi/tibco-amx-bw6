@@ -28,7 +28,7 @@ docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
 Software is installed in **/opt/tibco** folder
 
 # Details
-The setup scripts request and manage the installation of the configuration of the following products__
+The setup scripts request and manage the installation of the configuration of the following products <br />
 (Next to each product is indicated the exact name of the binary file that must be placed in the **install_folder**) :
 ```sh
 TIBCO Rendezvous 8.5.1 ................... : TIB_rv_8.5.1_linux_x86_64.rpm
