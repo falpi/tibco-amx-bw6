@@ -28,12 +28,12 @@ docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
 Software is installed in **/opt/tibco** folder
 
 # Details
-The setup scripts require and manage the configuration installation of the following products:
+The setup scripts request and manage the installation of the configuration of the following products (exact binary file must be placed in the **install_folder**):
 ```sh
-TIBCO Rendezvous 8.5.1
-TIBCO FTL 6.6.1
-TIBCO Enterprise Message Service 8.6.0
-TIBCO ActiveMatrix BusinessWorks 6.8.0
-TIBCO Enterprise Administrator 2.4.0
+TIBCO Rendezvous 8.5.1 ................... : TIB_rv_8.5.1_linux_x86_64.rpm
+TIBCO FTL 6.6.1 .......................... : TIB_ftl_6.6.1_linux_x86_64.zip
+TIBCO Enterprise Message Service 8.6.0 ... : TIB_ems_8.6.0_linux_x86_64.zip
+TIBCO ActiveMatrix BusinessWorks 6.8.0 ... : TIB_bw_6.8.0_linux26gl23_x86_64.zip
+TIBCO Enterprise Administrator 2.4.0 ..... : TIB_tea_2.4.0_linux26gl23_x86_64.zip
 ```
 The configuration chosen for the BWAGENT is the one based on FTL with persistence on MariaDB. The image includes the database server and provides to configure it appropriately during setup.
