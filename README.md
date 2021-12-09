@@ -20,11 +20,7 @@ docker run -d \
        -p 13306:3306 \
       -v <install_folder>:/install \
        tibco-amx-bw:6.8.0
-```
-Then you can commit this container to have installed and configured product:
-```sh
-docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
-```
+
 Software is installed in **/opt/tibco** folder.
 
 The progress and outcome of the installation is tracked in the log file **/home/tibco/tibco-install.log**.
@@ -35,6 +31,11 @@ systemctl start tibco
 systemctl stop tibco
 ```
 You can access the TEA console with browser a the urls ```http://localhost:8777/tea/``` or  ```http://<host_ip>:8777/tea/```.
+
+You can commit this container to have installed and configured product:
+```sh
+docker commit tibco-bw-6.8 tibco-amx-bw:6.8.0-installed
+```
 
 # Details
 The setup scripts manage the installation and configuration of the following products <br />
