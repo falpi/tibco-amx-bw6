@@ -1,6 +1,6 @@
-# TIBCO ActiveMatrix™ BusinessWorks 6.8 Docker
+# TIBCO ActiveMatrix™ BusinessWorks 6.8 Docker Image
 
-Image for running a complete single-node cluster instance of TIBCO ActiveMatrix™ BusinessWorks 6.8.0. The image do not contain TIBCO binaries itself and will install them on first run from external directory.
+Image for running a complete single-node all-in-one cluster instance of **TIBCO ActiveMatrix™ BusinessWorks 6.8.0**. The image do not contain TIBCO binaries itself and will install them on first run from external directory.
 
 ``This image for development use only``
 
