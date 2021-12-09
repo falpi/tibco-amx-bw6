@@ -18,7 +18,7 @@ docker run -d \
        -p 2222:2222 \
        -p 10022:22 \
        -p 13306:3306 \
-      -v <install_folder>:/install \
+       -v <install_folder>:/install \
        tibco-amx-bw:6.8.0
 ```
 Software is installed in **/opt/tibco** folder.
