@@ -6,7 +6,7 @@ Image for running a complete single-node cluster instance of TIBCO ActiveMatrixâ
 
 # Usage
 Download binaries installation files from [TIBCO site](https://edelivery.tibco.com/) and put them to **install_folder**.
-Run container and it will install oracle and create database:
+Run container and it will install all products and configure single-node cluster :
 
 ```sh
 docker run -d \
