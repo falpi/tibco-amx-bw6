@@ -1,0 +1,4 @@
+CREATE DATABASE bwadmindb;
+USE bwadmindb;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'manager' WITH GRANT OPTION;
+GRANT CREATE,SELECT,UPDATE,INSERT,DELETE ON *.* to 'bwuser'@'localhost' IDENTIFIED BY 'bwuser'; 

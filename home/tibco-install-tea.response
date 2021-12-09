@@ -1,0 +1,27 @@
+<?xml  version="1.0"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>---Universal Installer Silent Installation Properties---</comment>
+
+<!--accept the license agreement-->
+<entry key="acceptLicense">true</entry>
+
+<!--the root installation directory-->
+<!--if the product does not support multiple instances and TIBCO_HOME has already been set then-->
+<!--this value is ignored and the existing TIBCO_HOME is used as the installation root-->
+<entry key="installationRoot">/opt/tibco/tea</entry>
+
+<entry key="useInstallProfile">true</entry>
+<!--To install both profiles-->
+<entry key="selectedProfiles">1) TIBCO Enterprise Administrator</entry>
+<!--To install both profiles-->
+<!--entry key="selectedProfiles">1) TIBCO Enterprise Administrator,2) TIBCO HAWK Agent</entry-->
+
+<!--If using an existing environment then the installationRoot AND environmentName MUST match a pre-existing environment-->
+<!--If creating a new environment then the installationRoot AND environmentName MUST BE UNIQUE and not match a pre-existing environment-->
+<entry key="environmentName">tea-2.4</entry>
+<entry key="configDirectoryRoot">/opt/tibco/tea</entry>
+<!-- location of java -->
+<entry key="java.home.directory">/opt/tibco/bw/tibcojre64/11</entry>
+
+</properties>

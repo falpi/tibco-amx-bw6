@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>---Universal Installer Silent Installation Properties---</comment>
+
+<!--accept the license agreement-->
+<entry key="acceptLicense">true</entry>
+
+
+
+<!--the root installation directory-->
+<!--if the product does not support multiple instances and TIBCO_HOME has already been set then-->
+<!--this value is ignored and the existing TIBCO_HOME is used as the installation root-->
+<entry key="installationRoot">/opt/tibco/bw</entry>
+
+<!--If using an existing environment then the installationRoot AND environmentName MUST match a pre-existing environment-->
+<!--If creating a new environment then the installationRoot AND environmentName MUST BE UNIQUE and not match a pre-existing environment-->
+<entry key="environmentName">bw-6.8</entry>
+
+<!-- The following configuration parameters control the download of all LGPL components used by BW, e.g. Hibernate -->
+<!-- LGPLAssemblyLicenseAccepted - true or false to accept the license -->
+<!-- LGPLAssemblyDownload - true or false to download the assembly from the public tibco server -->
+<!-- LGPLAssemblyPath - if LGPLAssemblyDownload is false, this is the path where the LGPL assembly is located on the system (note that all LGPL assemblies must be in the same directory -->
+<entry key="LGPLAssemblyLicenseAccepted">true</entry>
+<entry key="LGPLAssemblyDownload">true</entry>
+<entry key="LGPLAssemblyPath">/opt/tibco/thirdpartyDownload</entry>
+
+<!--Profiles Selection-->
+<!-- The 'selectedProfiles' value is a comma separated list of profiles to install. If a profile is listed which does not exist, then it is ignored and the default profile will be used. At least one profile must be listed if useInstallProfile is set to true -->
+
+<!-- The following parameters needs to comment out to install maven component-->
+
+<entry key="useInstallProfile">true</entry>
+<entry key="selectedProfiles">Typical,Runtime</entry>
+
+<!-- The following parameters needs to enable to install maven component-->
+
+<!--<entry key="feature_Design_BW">true</entry>
+<entry key="feature_Runtime_BW">true</entry>
+<entry key="feature_Maven Plugin_BW">false</entry>-->
+
+<!-- BW upgrade -->
+<!-- Option to backup domains during BW upgrade -->
+<entry key="tibco.bw.backup.domains">false</entry>
+
+
+</properties>
