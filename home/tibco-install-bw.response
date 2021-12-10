@@ -22,8 +22,8 @@
 <!-- LGPLAssemblyDownload - true or false to download the assembly from the public tibco server -->
 <!-- LGPLAssemblyPath - if LGPLAssemblyDownload is false, this is the path where the LGPL assembly is located on the system (note that all LGPL assemblies must be in the same directory -->
 <entry key="LGPLAssemblyLicenseAccepted">true</entry>
-<entry key="LGPLAssemblyDownload">true</entry>
-<entry key="LGPLAssemblyPath">/opt/tibco/thirdpartyDownload</entry>
+<entry key="LGPLAssemblyDownload">false</entry>
+<entry key="LGPLAssemblyPath">/home/tibco</entry>
 
 <!--Profiles Selection-->
 <!-- The 'selectedProfiles' value is a comma separated list of profiles to install. If a profile is listed which does not exist, then it is ignored and the default profile will be used. At least one profile must be listed if useInstallProfile is set to true -->
